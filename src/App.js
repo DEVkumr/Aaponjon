@@ -21,10 +21,10 @@ class App extends React.Component{
     return(
       <React.Fragment>
         <div>
-          <Navbar bg="danger" expand="md" variant="dark">
+          <Navbar bg="warning" expand="md" variant="light">
             <Navbar.Brand as={Link} to="/home">
-                <img src={logo1} alt="Apanjan" height="100px" width="150px" />
-                <img src={logo2} alt="Apanjan" height="100px" width="250px" />
+                <img src={logo1} alt="Apanjan" height="80px" width="50px" />
+                <img src={logo2} alt="Apanjan" height="80px" width="100px" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

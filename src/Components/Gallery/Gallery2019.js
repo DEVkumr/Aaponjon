@@ -22,24 +22,10 @@ class Gallery2019 extends React.Component {
                 <Container>
                     <Row>
                         <Col xs={6} md={4}>
-                            
+                            <Image src={img2019_4} thumbnail />
                         </Col>
-                        <Col xs={6} md={4}>
-                            <Image src={img2019_1} thumbnail />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            
-                        </Col>
-                    </Row>
-                    <Row>
                         <Col xs={6} md={4}>
                             <Image src={img2019_2} thumbnail />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <Image src={img2019_3} thumbnail />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <Image src={img2019_4} thumbnail />
                         </Col>
                     </Row>
                     <Row>
@@ -49,9 +35,6 @@ class Gallery2019 extends React.Component {
                         <Col xs={6} md={4}>
                             <Image src={img2019_6} thumbnail />
                         </Col>
-                        <Col xs={6} md={4}>
-                            <Image src={img2019_7} thumbnail />
-                        </Col>
                     </Row>
                     <Row>
                         <Col xs={6} md={4}>
@@ -60,8 +43,21 @@ class Gallery2019 extends React.Component {
                         <Col xs={6} md={4}>
                             <Image src={img2019_9} thumbnail />
                         </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <Image src={img2019_1} thumbnail />
+                        </Col>
                         <Col xs={6} md={4}>
                             <Image src={img2019_10} thumbnail />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <Image src={img2019_3} thumbnail />
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Image src={img2019_7} thumbnail />
                         </Col>
                     </Row>
                 </Container>

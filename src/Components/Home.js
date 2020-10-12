@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
@@ -6,19 +7,19 @@ import slider1 from '../Images/sliderimg1.png'
 import slider2 from '../Images/sliderimg2.jpg'
 
 class Home extends React.Component {
-constructor(props){
-    super(props);
-    this.state = {
-        isSashti: true,
-        isSaptami: false,
-        isAshtami: false,
-        isNavami: false,
-        isDashami: false
-    }
+    constructor(props){
+        super(props);
+        this.state = {
+            isSashti: true,
+            isSaptami: false,
+            isAshtami: false,
+            isNavami: false,
+            isDashami: false
+        }
     }
 
     render(){
-
+    const sashtiTime = "11-10-2020 03:07:30"
     const fadeImages = [
         slider2,
         slider1
@@ -96,49 +97,96 @@ constructor(props){
             </div>
             <div className="tab-container">
                 <h2> Puja Schedule </h2>
-                <div class="tab">
-                <button className="tablinks" onClick={checkDay} id="defaultOpen" value="Sashti">Maha Sashti</button>
-                <button className="tablinks" onClick={checkDay} value="Saptami">Maha Saptami</button>
-                <button className="tablinks" onClick={checkDay} value="Ashtami">Maha Ashtami</button>
-                <button className="tablinks" onClick={checkDay} value="Navami"> Maha Navami</button>
-                <button className="tablinks" onClick={checkDay} value="Dashami">Bijaya Dashami</button>
-                    </div>
-                
+                <div className="tab">
+                    <button className="tablinks" onClick={checkDay} id="defaultOpen" value="Sashti">Maha Sashti</button>
+                    <button className="tablinks" onClick={checkDay} value="Saptami">Maha Saptami</button>
+                    <button className="tablinks" onClick={checkDay} value="Ashtami">Maha Ashtami</button>
+                    <button className="tablinks" onClick={checkDay} value="Navami"> Maha Navami</button>
+                    <button className="tablinks" onClick={checkDay} value="Dashami">Bijaya Dashami</button>
+                </div>
+                {console.log("Time: ", moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss"))}
                 {this.state.isSashti &&
                 <div id="Sashti" className="tabcontent">
-                <h3>Sashti</h3>
-                <p>Devotees welcomes the goddess and festive celebrations are inaugurated</p>
-                </div>}
+                    <h3>Maha Sashti</h3>
+                    <span>
+                        <ul>
+                            <li> Bangla 5 Kartik, 22nd October 2020 <b>Thrusday</b> 
+                                {moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss") >= sashtiTime ? <sup className="blink_me">Live</sup> : ''}
+                            </li>
+                            <li> Saradia Durga Devi Kolpa Aarambho </li>
+                            <li> Devi-er Aamontron Aadhivas - <b>7:30 PM</b> </li>
+                        </ul>
+                    </span>
+                </div>
+                }
                 {this.state.isSaptami &&
                 <div id="Saptami" className="tabcontent">
-                    <h3>Saptami</h3>
-                <p>The Maha Puja (Great Ceremony) starts on Maha Saptami.</p> 
-                </div>}
+                    <h3> Maha Saptami</h3>
+                    <span>
+                        <ul>
+                            <li> Bangla 6 Kartik, 23rd October 2020 <b>Friday</b> </li>
+                            <li> Nobopotrika Aagomon Jalashaya Roana - <b>7:30 AM</b> </li>
+                            <li> Nobopotrika Prabesh </li>
+                            <li> Puja Aarambho - <b>9:30 AM</b> </li>
+                            <li> Pushpanjali - <b>10:30 AM</b> </li>
+                            <li> Bhog Nibedan - <b>12:00 Noon</b> </li>
+                            <li> Sandhya Aarti - <b>7:10 PM</b> </li>
+                        </ul>
+                    </span> 
+                </div>
+                }
                 {this.state.isAshtami &&
                 <div id="Ashtami" className="tabcontent">
-                    <h3>Ashtami</h3>
-                    <p>This is the eighth day of Durga Puja celebrations, when the weapons used by Durga are worshipped.</p>
-                </div>}
+                    <h3>Maha Ashtami</h3>
+                    <span>
+                        <ul>
+                            <li> Bangla 7 Kartik, 24th October 2020 <b>Saturday</b> </li>
+                            <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li>Sandhi Puja - <b>11:00 AM - 11:48 AM</b></li>
+                            <li>Balidan - <b>11:24 AM</b> </li>
+                            <li> Pushpanjali - <b>11:30 AM</b></li>
+                            <li> Bhog Nibedan - <b>12:00 Noon</b> </li>
+                            <li> Sandhya Aarti - <b>7:10 PM</b> </li>
+                        </ul>
+                    </span>
+                </div>
+                }
                 {this.state.isNavami &&
                 <div id="Navami" className="tabcontent">
-                    <h3>Navami</h3>
-                <p>This is the ninth day of Durga Puja. On this day, the victory of Durga over the evil buffalo demon Mahishasura is celebrated. </p>
-                </div>}
+                    <h3>Maha Navami</h3>
+                    <span>
+                        <ul>
+                            <li> Bangla 8 Kartik, 25th October 2020 <b>Sunday</b> </li>
+                            <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li> Pushpanjali - <b>10:30 AM</b> </li>
+                            <li> Hom Kriya - <b>11:30AM</b> </li>
+                            <li> Bhog Nibedan - <b>12:30 Noon</b> </li>
+                            <li> Sandhya Aarti - <b>7:30 PM</b> </li>
+                        </ul>
+                    </span>
+                </div>
+                }
                 {this.state.isDashami &&
                 <div id="Dashami" class="tabcontent">
-                <h3>Dashami</h3>
-                <p>Also known as Dashain or Tenth day of Navratri or Durgotsav, Vijaya Dashami commemorates the day that Durga appeared riding a lion to slay the Mahisasura.</p>
-                </div>}
+                    <h3>Vijaya Dashami</h3>
+                    <span>
+                        <ul>
+                            <li> Bangla 9 Kartik, 26th October 2020 <b>Monday</b> </li>
+                            <li> Nobopotrika Bisarjon and Kalash Bisarjon - <b> before 11:30 AM</b> </li>
+                        </ul>
+                    </span>
+                </div>
+                }
             </div>
-            <div class="slideshow-container">
+            <div className="slideshow-container">
                 <iframe 
                     title='sample-video'
-                    height='500px'
+                    height='350px'
                     width='100%'
                     src="https://www.youtube.com/embed/_1uWeph1zEE" 
-                    frameborder="0" 
+                    frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </div>
         </React.Fragment>
