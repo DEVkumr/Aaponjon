@@ -87,3 +87,12 @@ body {
   margin: auto;
   display: flex;
 }
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+  color: red;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
