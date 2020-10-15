@@ -110,9 +110,15 @@ class Home extends React.Component {
                     <h3>Maha Sashti</h3>
                     <span>
                         <ul>
+                        <a href="https://www.youtube.com/embed/live_stream?channel=UCwNsZ7DTlA8vhhqqCmwG-aw" target="_blank"> 
                             <li> Bangla 5 Kartik, 22nd October 2020 <b>Thrusday</b> 
-                                {moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss") >= sashtiTime ? <sup className="blink_me">Live</sup> : ''}
+                                {moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss") >= sashtiTime ? 
+                                    <sup className="blink_me">
+                                        Live 
+                                    </sup> 
+                                : ''}
                             </li>
+                        </a>
                             <li> Saradia Durga Devi Kolpa Aarambho </li>
                             <li> Devi-er Aamontron Aadhivas - <b>7:30 PM</b> </li>
                         </ul>
@@ -181,9 +187,9 @@ class Home extends React.Component {
             <div className="slideshow-container">
                 <iframe 
                     title='sample-video'
-                    height='500px'
+                    height='350px'
                     width='100%'
-                    src="https://www.youtube.com/embed/_1uWeph1zEE" 
+                    src="https://www.youtube.com/embed/WeETd_pkj74" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowFullScreen>
