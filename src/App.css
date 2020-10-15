@@ -98,3 +98,20 @@ body {
 @keyframes blinker {  
   50% { opacity: 0; }
 }
+
+.aboutfontstyle {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color:black;
+  vertical-align:top;
+}
+
+.row_About {
+  display: flex;
+}
+
+/* Create equal columns that sits next to each other */
+.column_About {
+   float: left;
+   width: 25%;
+}

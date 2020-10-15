@@ -31,7 +31,7 @@ class App extends React.Component{
               <Nav className="align-right">
                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
-                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                {/* <Nav.Link as={Link} to="/contact">Contact</Nav.Link> */}
                 <NavDropdown title="Gallery" id="basic-nav-dropdown">
                   <NavDropdown.Item as={Link} to="/gallery/2020">2020</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/gallery/2019">2019</NavDropdown.Item>
