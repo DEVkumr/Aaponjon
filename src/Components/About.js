@@ -72,6 +72,7 @@ class About extends React.Component {
                             <div className="column_About">Shri N. C. Maity</div>
                         </div>
                         <div className="row_About">
+                            <div className="column_About"></div>
                             <div className="column_About">
                                 Shri A. K. Banerjee
                             </div>
@@ -89,11 +90,13 @@ class About extends React.Component {
                             <div className="column_About">Shri Sujit Roy</div>
                         </div>
                         <div className="row_About">
+                            <div className="column_About"></div>
                             <div className="column_About">
                                 Shri Bhajan Karmakar
                             </div>
                         </div>
                         <div className="row_About">
+                            <div className="column_About"></div>
                             <div className="column_About">
                                 Shri Ranjeet Ghosh
                             </div>
