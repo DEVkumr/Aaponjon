@@ -76,7 +76,7 @@ class Home extends React.Component {
     
     return(
         <React.Fragment>
-            <div className="slide-container">
+            <div className="slideshow-holder">
                 <Fade>
                 <div className="each-fade">
                     <div>
