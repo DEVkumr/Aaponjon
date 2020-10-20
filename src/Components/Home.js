@@ -114,12 +114,12 @@ class Home extends React.Component {
                 {console.log("Time: ", moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss"))}
                 {this.state.isSashti &&
                 <div id="Sashti" className="tabcontent">
-                    <span> <b><i> Himer porosh laglo prane </i></b> </span>
-                    <span> <b><i> Sharodiar aagomone </i></b>  </span>
-                    <span> <b><i> Aagomoner khobor pae </i></b>  </span>
-                    <span> <b><i> Boner pakhi uthlo gae </i></b>  </span>    
-                    <span> <b><i> Shishir bheja notun bhore </i></b>  </span>    
-                    <span> <b><i> Maa aasche aalo kore </i></b>  </span>
+                    <span> <b><i> শক্তি দিও, জ্ঞান দিও, সাহস দিও মাগো, </i></b> </span>
+                    <span> <b><i> আঁধার ভুবন করতে আলো </i></b>  </span>
+                    <span> <b><i> জাগো তুমি জাগো। </i></b>  </span>
+                    <span> <b><i> খুশির আলোয় ভরে যেন জগৎ ও সংসার </i></b>  </span>    
+                    <span> <b><i> অসুর নিধন সত্যি করা যায় </i></b>  </span>    
+                    <span> <b><i> প্রমান করো আরও একবার। </i></b>  </span>
                     <br/>   
                     <span>
                         <ul>
@@ -132,7 +132,7 @@ class Home extends React.Component {
                                 : ''}
                             </li>
                         </a>
-                            <li> Saradia Durga Devi Kolpa Aarambho - <b>10:00 AM</b></li>
+                            <li> Saradia Durga Devi Kolpa Aarambho - <b>7:30 AM</b></li>
                             <li> Devi-er Aamontron Aadhivas - <b>7:30 PM</b> </li>
                         </ul>
                     </span>
@@ -140,75 +140,80 @@ class Home extends React.Component {
                 }
                 {this.state.isSaptami &&
                 <div id="Saptami" className="tabcontent">
-                    <span> <b><i> Nil aakasher megher-bhela </i></b> </span>
-                    <span> <b><i> Poddo phuler papdi mela </i></b>  </span>
-                    <span> <b><i> Dhaker taale kasher khela </i></b>  </span>
-                    <span> <b><i> Aanonde katuk shorot bela </i></b>  </span>
+                    <span> <b><i> নীল আকাশের মেঘের ভেলা </i></b> </span>
+                    <span> <b><i> পদ্ম ফুলের পাঁপড়ি মেলা, </i></b>  </span>
+                    <span> <b><i> ঢাকের তালে কাশের খেলা </i></b>  </span>
+                    <span> <b><i> আনন্দে কাটুক শারদবেলা। </i></b>  </span>
                     <br/>
                     <span>
                         <ul>
                             <li> Bangla 6 Kartik, 23rd October 2020 <b>Friday</b> </li>
                             <li> Nobopotrika Aagomon Jalashaya Roana - <b>7:30 AM</b> </li>
-                            <li> Nobopotrika Prabesh </li>
                             <li> Puja Aarambho - <b>9:30 AM</b> </li>
                             <li> Pushpanjali - <b>10:30 AM</b> </li>
                             <li> Bhog Nibedan - <b>12:00 Noon</b> </li>
-                            <li> Sandhya Aarti - <b>7:10 PM</b> </li>
+                            <li> Sandhya Aarti - <b>7:00 PM</b> </li>
                         </ul>
                     </span> 
                 </div>
                 }
                 {this.state.isAshtami &&
                 <div id="Ashtami" className="tabcontent">
-                    <span> <b><i> Elo khushir shorot </i></b> </span>
-                    <span> <b><i> Ektu himel hawa </i></b>  </span>
-                    <span> <b><i> Onek Khushi onek aalo </i></b>  </span>
-                    <span> <b><i> Pujo ebaar katuk bhalo </i></b>  </span>
+                    <span> <b><i> এলো খুশির শরৎ </i></b> </span>
+                    <span> <b><i> একটু হিমেল হাওয়া, </i></b>  </span>
+                    <span> <b><i> অনেক খুশি অনেক আলো </i></b>  </span>
+                    <span> <b><i> পুজো এবার কাটুক ভালো। </i></b>  </span>
                     <br/>
                     <span>
                         <ul>
                             <li> Bangla 7 Kartik, 24th October 2020 <b>Saturday</b> </li>
                             <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li> Chandi-Path - <b>9:30 AM</b> </li>
                             <li> Pushpanjali - <b>10:00 AM</b>(Only once)</li>
-                            <li>Sandhi Puja - <b>11:00 AM - 11:48 AM</b></li>
-                            <li>Balidan - <b>11:24 AM</b> </li>
-                            <li> Pushpanjali - <b>11:30 AM</b></li>
+                            <li> Sandhi Puja - <b>11:00 AM - 11:48 AM</b></li>
+                            <li> Balidan - <b>11:24 AM</b> </li>
+                            <li> Sandhi Puja Pushpanjali - <b>11:30 AM</b></li>
                             <li> Bhog Nibedan - <b>12:00 Noon</b> </li>
-                            <li> Sandhya Aarti - <b>7:10 PM</b> </li>
+                            <li> Sandhya Aarti - <b>7:00 PM</b> </li>
                         </ul>
                     </span>
                 </div>
                 }
                 {this.state.isNavami &&
                 <div id="Navami" className="tabcontent">
-                    <span> <b><i> Shorot meghe bhaslo bhela </i></b> </span>
-                    <span> <b><i> Kaas phulete laglo doola </i></b>  </span>
-                    <span> <b><i> Dhaker upor podlo kathi </i></b>  </span>
-                    <span> <b><i> Pujo katuk phataphati </i></b>  </span>
+                    <span> <b><i> শরৎ মেঘে ভাসলো ভেলা </i></b> </span>
+                    <span> <b><i> কাশ ফুলেতে লাগলো দোলা, </i></b>  </span>
+                    <span> <b><i> ঢাকের উপর পড়লো কাঠি </i></b>  </span>
+                    <span> <b><i> পুজো কাটুক ফাটাফাটি। </i></b>  </span>
                     <br/>
                     <span>
                         <ul>
                             <li> Bangla 8 Kartik, 25th October 2020 <b>Sunday</b> </li>
                             <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li> Chandi-Path - <b>9:30 AM</b> </li>
                             <li> Pushpanjali - <b>10:30 AM</b> </li>
                             <li> Hom Kriya - <b>11:30AM</b> </li>
-                            <li> Bhog Nibedan - <b>12:30 Noon</b> </li>
-                            <li> Sandhya Aarti - <b>7:30 PM</b> </li>
+                            <li> Bhog Nibedan - <b>12:30 PM</b> </li>
+                            <li> Sandhya Aarti - <b>7:00 PM</b> </li>
                         </ul>
                     </span>
                 </div>
                 }
                 {this.state.isDashami &&
                 <div id="Dashami" class="tabcontent">
-                    <span> <b><i> Uthsober aaj ses-bela </i></b> </span>
-                    <span> <b><i> Shuru hobe sindoor khela </i></b>  </span>
-                    <span> <b><i> Moner majhe rekhe Maa ke </i></b>  </span>
-                    <span> <b><i> Jol chol-chol ae du chokhe  </i></b>  </span>
+                    <span> <b><i> উৎসবের আজ শেষবেলা </i></b> </span>
+                    <span> <b><i> শুরু হবে সিঁদুর খেলা, </i></b>  </span>
+                    <span> <b><i> মনের মাঝে রেখে মা কে </i></b>  </span>
+                    <span> <b><i> জল ছল ছল এই দুচোখে।  </i></b>  </span>
                     <br/>
                     <span>
                         <ul>
                             <li> Bangla 9 Kartik, 26th October 2020 <b>Monday</b> </li>
-                            <li> Nobopotrika Bisarjon and Kalash Bisarjon - <b> before 11:30 AM</b> </li>
+                            <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li> Pushpanjali - <b>10:30 AM</b> </li>
+                            <li> Ghot Niranjon - <b>11:30 AM</b> </li>
+                            <li> Devi Niranjon - <b>5:00 PM</b> </li>
+                            <li> Shanti Jol </li>
                         </ul>
                     </span>
                 </div>
