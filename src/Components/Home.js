@@ -114,12 +114,12 @@ class Home extends React.Component {
                 {console.log("Time: ", moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss"))}
                 {this.state.isSashti &&
                 <div id="Sashti" className="tabcontent">
-                    <span> <b><i> শক্তি দিও, জ্ঞান দিও, সাহস দিও মাগো, </i></b> </span>
-                    <span> <b><i> আঁধার ভুবন করতে আলো </i></b>  </span>
-                    <span> <b><i> জাগো তুমি জাগো। </i></b>  </span>
-                    <span> <b><i> খুশির আলোয় ভরে যেন জগৎ ও সংসার </i></b>  </span>    
-                    <span> <b><i> অসুর নিধন সত্যি করা যায় </i></b>  </span>    
-                    <span> <b><i> প্রমান করো আরও একবার। </i></b>  </span>
+                    <span> <b><i> হিমের পরশ লাগলো প্রাণে </i></b> </span>
+                    <span> <b><i> শারদীয়ার আগমনে, </i></b>  </span>
+                    <span> <b><i> আগমনীর খবর পেয়ে </i></b>  </span>
+                    <span> <b><i> বনের পাখি উঠলো গেয়ে, </i></b>  </span>    
+                    <span> <b><i> শিশির ভেজা নতুন ভোরে </i></b>  </span>    
+                    <span> <b><i> মা আসছে আলো করে। </i></b>  </span>
                     <br/>   
                     <span>
                         <ul>
