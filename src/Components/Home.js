@@ -5,6 +5,7 @@ import 'react-slideshow-image/dist/styles.css'
 
 import slider1 from '../Images/sliderimg1.png'
 import slider2 from '../Images/sliderimg2.jpg'
+import slider3 from '../Images/sliderimg3.jpeg'
 
 class Home extends React.Component {
     constructor(props){
@@ -22,7 +23,8 @@ class Home extends React.Component {
     const sashtiTime = "11-10-2020 03:07:30"
     const fadeImages = [
         slider2,
-        slider1
+        slider1,
+        slider3
     ]
 
     const checkDay = (event) => {
@@ -76,20 +78,25 @@ class Home extends React.Component {
     
     return(
         <React.Fragment>
-            <div className="slideshow-holder">
-                <Fade>
-                <div className="each-fade">
-                    <div>
-                    <img src={fadeImages[0]} />
+            {/* <div className="slideshow-holder">
+                <Fade >
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[0]} />
+                        </div>
                     </div>
-                </div>
-                <div className="each-fade">
-                    <div>
-                    <img src={fadeImages[1]} />
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[1]} />
+                        </div>
                     </div>
-                </div>
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[2]} />
+                        </div>
+                    </div>
                 </Fade>
-            </div>
+            </div> */}
             <div className="marquee-container">
                 <marquee direction="left" scrollamount="10">
                 The most awaited event of the year is coming soon.Enjoy this auspicious festival with your loved one.Stay safe, Stay at home.
@@ -107,7 +114,13 @@ class Home extends React.Component {
                 {console.log("Time: ", moment().format("DD-MM-YYYY") + ' ' + moment().format("hh:mm:ss"))}
                 {this.state.isSashti &&
                 <div id="Sashti" className="tabcontent">
-                    <h3>Maha Sashti</h3>
+                    <span> <b><i> Himer porosh laglo prane </i></b> </span>
+                    <span> <b><i> Sharodiar aagomone </i></b>  </span>
+                    <span> <b><i> Aagomoner khobor pae </i></b>  </span>
+                    <span> <b><i> Boner pakhi uthlo gae </i></b>  </span>    
+                    <span> <b><i> Shishir bheja notun bhore </i></b>  </span>    
+                    <span> <b><i> Maa aasche aalo kore </i></b>  </span>
+                    <br/>   
                     <span>
                         <ul>
                         <a href="https://www.youtube.com/embed/live_stream?channel=UCwNsZ7DTlA8vhhqqCmwG-aw" target="_blank"> 
@@ -119,7 +132,7 @@ class Home extends React.Component {
                                 : ''}
                             </li>
                         </a>
-                            <li> Saradia Durga Devi Kolpa Aarambho </li>
+                            <li> Saradia Durga Devi Kolpa Aarambho - <b>10:00 AM</b></li>
                             <li> Devi-er Aamontron Aadhivas - <b>7:30 PM</b> </li>
                         </ul>
                     </span>
@@ -127,7 +140,11 @@ class Home extends React.Component {
                 }
                 {this.state.isSaptami &&
                 <div id="Saptami" className="tabcontent">
-                    <h3> Maha Saptami</h3>
+                    <span> <b><i> Nil aakasher megher-bhela </i></b> </span>
+                    <span> <b><i> Poddo phuler papdi mela </i></b>  </span>
+                    <span> <b><i> Dhaker taale kasher khela </i></b>  </span>
+                    <span> <b><i> Aanonde katuk shorot bela </i></b>  </span>
+                    <br/>
                     <span>
                         <ul>
                             <li> Bangla 6 Kartik, 23rd October 2020 <b>Friday</b> </li>
@@ -143,11 +160,16 @@ class Home extends React.Component {
                 }
                 {this.state.isAshtami &&
                 <div id="Ashtami" className="tabcontent">
-                    <h3>Maha Ashtami</h3>
+                    <span> <b><i> Elo khushir shorot </i></b> </span>
+                    <span> <b><i> Ektu himel hawa </i></b>  </span>
+                    <span> <b><i> Onek Khushi onek aalo </i></b>  </span>
+                    <span> <b><i> Pujo ebaar katuk bhalo </i></b>  </span>
+                    <br/>
                     <span>
                         <ul>
                             <li> Bangla 7 Kartik, 24th October 2020 <b>Saturday</b> </li>
                             <li> Puja Aarambho - <b>9:00 AM</b> </li>
+                            <li> Pushpanjali - <b>10:00 AM</b>(Only once)</li>
                             <li>Sandhi Puja - <b>11:00 AM - 11:48 AM</b></li>
                             <li>Balidan - <b>11:24 AM</b> </li>
                             <li> Pushpanjali - <b>11:30 AM</b></li>
@@ -159,7 +181,11 @@ class Home extends React.Component {
                 }
                 {this.state.isNavami &&
                 <div id="Navami" className="tabcontent">
-                    <h3>Maha Navami</h3>
+                    <span> <b><i> Shorot meghe bhaslo bhela </i></b> </span>
+                    <span> <b><i> Kaas phulete laglo doola </i></b>  </span>
+                    <span> <b><i> Dhaker upor podlo kathi </i></b>  </span>
+                    <span> <b><i> Pujo katuk phataphati </i></b>  </span>
+                    <br/>
                     <span>
                         <ul>
                             <li> Bangla 8 Kartik, 25th October 2020 <b>Sunday</b> </li>
@@ -174,7 +200,11 @@ class Home extends React.Component {
                 }
                 {this.state.isDashami &&
                 <div id="Dashami" class="tabcontent">
-                    <h3>Vijaya Dashami</h3>
+                    <span> <b><i> Uthsober aaj ses-bela </i></b> </span>
+                    <span> <b><i> Shuru hobe sindoor khela </i></b>  </span>
+                    <span> <b><i> Moner majhe rekhe Maa ke </i></b>  </span>
+                    <span> <b><i> Jol chol-chol ae du chokhe  </i></b>  </span>
+                    <br/>
                     <span>
                         <ul>
                             <li> Bangla 9 Kartik, 26th October 2020 <b>Monday</b> </li>
